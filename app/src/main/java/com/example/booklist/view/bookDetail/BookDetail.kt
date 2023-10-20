@@ -25,10 +25,3 @@ fun BookDetailScreen(){
         )
     }
 }
-
-@Composable
-fun dummy(){
-    Column(){
-
-    }
-}
