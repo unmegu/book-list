@@ -12,6 +12,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
+import com.example.booklist.view.ScanCodeButton
 
 @Composable
 fun BookListScreen(
@@ -49,5 +50,6 @@ fun BookListItem() {
             text = "後に引数を使って，ここを本のタイトルになるようにする",
             fontSize = 16.sp
         )
+        ScanCodeButton()
     }
 }
