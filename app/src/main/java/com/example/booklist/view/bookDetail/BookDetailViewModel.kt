@@ -15,10 +15,4 @@ class BookDetailViewModel @Inject constructor(): ViewModel(){
     * リポジトリ経由で本参照
     * BookList, BookDetailはリポジトリにあるもの＝すべての本という認識で実装する（ここで追加の処理とかは関係ない）
   　*/
-
-    fun getBook(){
-        viewModelScope.launch{
-            getBookRetrofit(isbn = "9784065163870")
-        }
-    }
 }
