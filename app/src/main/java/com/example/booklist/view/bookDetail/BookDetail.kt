@@ -9,9 +9,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 
 @Composable
-fun BookDetailScreen(){
+fun BookDetailScreen(
+    bookDetailViewModel: BookDetailViewModel = hiltViewModel(),
+    ){
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -23,5 +26,6 @@ fun BookDetailScreen(){
                 .fillMaxSize()
                 .padding(12.dp),
         )
+        bookDetailViewModel.getBook()
     }
 }
