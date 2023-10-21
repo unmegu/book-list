@@ -26,6 +26,5 @@ fun BookDetailScreen(
                 .fillMaxSize()
                 .padding(12.dp),
         )
-        bookDetailViewModel.getBook()
     }
 }
